@@ -64,4 +64,24 @@ depending on the length of the size.
 
 L<Plack::Request>
 
+=head1 AUTHOR
+
+Tatsuhiko Miyagawa
+
+This module is part of L<Plack>, released as a separate distribution for easier
+reuse.
+
+=head1 COPYRIGHT
+
+The following copyright notice applies to all the files provided in
+this distribution, including binary files, unless explicitly noted
+otherwise.
+
+Copyright 2009-2011 Tatsuhiko Miyagawa
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
 =cut

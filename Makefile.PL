@@ -9,6 +9,8 @@ name 'Stream-Buffered';
 all_from 'lib/Stream/Buffered.pm';
 readme_from 'lib/Stream/Buffered.pm';
 
+requires 'Module::Runtime';
+
 tests 't/*.t';
 author_tests 'xt';
 

@@ -1,6 +1,6 @@
 package Stream::Buffered::PerlIO;
 use strict;
-use parent 'Stream::Buffered';
+use base 'Stream::Buffered';
 
 sub new {
     my $class = shift;

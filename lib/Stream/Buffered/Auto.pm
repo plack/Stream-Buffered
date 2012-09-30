@@ -1,6 +1,6 @@
 package Stream::Buffered::Auto;
 use strict;
-use parent 'Stream::Buffered';
+use base 'Stream::Buffered';
 
 sub new {
     my($class, undef, $max_memory_size) = @_;

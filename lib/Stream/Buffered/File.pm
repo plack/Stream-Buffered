@@ -1,6 +1,6 @@
 package Stream::Buffered::File;
 use strict;
-use parent 'Stream::Buffered';
+use base 'Stream::Buffered';
 
 use IO::File;
 

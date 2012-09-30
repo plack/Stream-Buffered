@@ -7,6 +7,8 @@ use Stream::Buffered::Auto;
 use Stream::Buffered::File;
 use Stream::Buffered::PerlIO;
 
+our $VERSION = 0.01;
+
 our $MaxMemoryBufferSize = 1024 * 1024;
 
 sub new {

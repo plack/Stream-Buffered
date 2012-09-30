@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 use FileHandle; # for seek etc.
-use Module::Runtime 'use_module';
+use Stream::Buffered::Auto;
+use Stream::Buffered::File;
+use Stream::Buffered::PerlIO;
 
 our $MaxMemoryBufferSize = 1024 * 1024;
 
@@ -30,7 +32,7 @@ sub new {
 
 sub create {
     my($class, $backend, $length, $max) = @_;
-    use_module("${class}::${backend}")->new($length, $max);
+    "${class}::${backend}"->new($length, $max);
 }
 
 sub print;

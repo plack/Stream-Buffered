@@ -1,5 +1,6 @@
 package Stream::Buffered::PerlIO;
 use strict;
+use warnings;
 use base 'Stream::Buffered';
 
 sub new {

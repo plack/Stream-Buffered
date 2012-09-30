@@ -1,5 +1,6 @@
 package Stream::Buffered::File;
 use strict;
+use warnings;
 use base 'Stream::Buffered';
 
 use IO::File;

@@ -1,5 +1,6 @@
 package Stream::Buffered::Auto;
 use strict;
+use warnings;
 use base 'Stream::Buffered';
 
 sub new {

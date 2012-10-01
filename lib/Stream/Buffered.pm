@@ -34,7 +34,7 @@ sub new {
 
 sub create {
     my($class, $backend, $length, $max) = @_;
-    "${class}::${backend}"->new($length, $max);
+    (__PACKAGE__ . "::$backend")->new($length, $max);
 }
 
 sub print;

@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-
+use 5.008001;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -20,7 +20,9 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Stream::Buffered",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "IO::File" => "1.14"
+  },
   "TEST_REQUIRES" => {},
   "VERSION" => "0.02",
   "test" => {
@@ -29,7 +31,9 @@ my %WriteMakefileArgs = (
 );
 
 
-my %FallbackPrereqs = ();
+my %FallbackPrereqs = (
+  "IO::File" => "1.14"
+);
 
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {

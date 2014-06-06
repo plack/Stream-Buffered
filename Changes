@@ -1,5 +1,7 @@
-0.02 Sun Sep 30 19:24:00 CST 2012
+{{$NEXT}}
+
+0.02  2012-09-30 19:24:00 CST
         - fix subclassing (so that Plack::TempBuffer continues to work)
 
-0.01 Sun Sep 30 15:44:11 CST 2012
+0.01  2012-09-30 15:44:11 CST
         - original version

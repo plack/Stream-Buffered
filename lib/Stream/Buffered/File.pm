@@ -3,11 +3,13 @@ use strict;
 use warnings;
 use base 'Stream::Buffered';
 
+use File::Spec;
 use IO::File;
 
 sub new {
     my $class = shift;
 
+    local $ENV{TMPDIR} = File::Spec->tmpdir;
     my $fh = IO::File->new_tmpfile;
     $fh->binmode;
 

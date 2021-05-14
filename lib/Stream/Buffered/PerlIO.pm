@@ -11,6 +11,7 @@ sub new {
 sub print {
     my $self = shift;
     $self->{buffer} .= "@_";
+    return 1;
 }
 
 sub size {

@@ -13,14 +13,15 @@ sub new {
 
 sub print {
     my $self = shift;
-    $self->{_buffer}->print(@_);
+    my $res = $self->{_buffer}->print(@_);
 
     if ($self->{_max} && $self->{_buffer}->size > $self->{_max}) {
         my $buf = $self->{_buffer}->{buffer};
         $self->{_buffer} = Stream::Buffered->create('File'),
-        $self->{_buffer}->print($buf);
+        $res = $self->{_buffer}->print($buf);
         delete $self->{_max};
     }
+    return $res;
 }
 
 sub size {
